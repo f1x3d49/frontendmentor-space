@@ -1,10 +1,10 @@
 import { Link, Route, Routes } from "react-router-dom";
 
 // Page Components
-import Crew from "./pages/Crew.js";
 import Home from "./pages/Home.js";
-import Destiantion from "./pages/Destiantion.js";
-import Technology from "./pages/Technology.js";
+import Destiantion from "./pages/Destination.js";
+import Crew from "./pages/Crew.js";
+import Technology from "./pages/Technology";
 
 function App() {
   return (
@@ -26,10 +26,10 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        <Route path="/" elements={<Home />} />
-        <Route path="/destination" elements={<Destiantion />} />
-        <Route path="/crew" elements={<Crew />} />
-        <Route path="/technology" elements={<Technology />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/destination" element={<Destiantion />} />
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
       </Routes>
     </div>
   );
