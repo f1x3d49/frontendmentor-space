@@ -1,5 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
 
 @tailwind base;
+
+* {
+  scrollbar-width: 4px;
+  scrollbar-color: rgb(#ffffff);
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+.backdrop {
+  backdrop-filter: blur(40.774227142333984px);
+}
+
+@layer utilities {
+  .bar::after {
+    @apply content-[''] bg-[#FFFFFF] opacity-50 h-[2px] w-[0%] left-[50%] -translate-x-[50%] -translate-y-[50%] -bottom-[5px] rounded-xl absolute duration-300;
+  }
+
+  .bar:hover::after {
+    @apply w-[25%];
+  }
+}

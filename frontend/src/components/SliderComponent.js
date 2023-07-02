@@ -1,4 +1,5 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { Dialog, Transition } from "@headlessui/react";
 import { ReactComponent as Close } from "../assets/shared/icon-close.svg";
 
@@ -28,20 +29,41 @@ export default function SliderComponent({ open, setOpen }) {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                   >
-                    <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
-                      <button
-                        type="button"
-                        className="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                        onClick={() => setOpen(false)}
-                      >
+                    <div className="absolute z-10 top-0 right-0 flex pr-2 pt-[34px] mr-[26.5px]">
+                      <button type="button" onClick={() => setOpen(false)}>
                         <span className="sr-only">Close panel</span>
-                        <Close className="h-6 w-6" aria-hidden="true" />
+                        <Close className="h-[19px] w-19px" aria-hidden="true" />
                       </button>
                     </div>
                   </Transition.Child>
-                  <div className="flex h-full flex-col overflow-y-scroll bg-primary1 blur-2xl py-6 shadow-xl">
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                      {/* Your content */}
+                  <div className=" relative flex h-full flex-col overflow-y-scroll bg-[rgba(255,255,255,0.04)] backdrop py-6">
+                    <div className="relative mt-24 flex-1 ml-8">
+                      <ul className="flex flex-col items-start justify-center gap-[32px] text-primary3 font-barlowcondensed text-[16px] uppercase tracking-[2.7px]">
+                        <li>
+                          <Link to="/" className="flex gap-3">
+                            <h1 className="font-bold">00</h1>
+                            <p>Home</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/destination" className="flex gap-3">
+                            <h1 className="font-bold">01</h1>
+                            <p>Destination</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/crew" className="flex gap-3">
+                            <h1 className="font-bold">02</h1>
+                            <p>Crew</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/technology" className="flex gap-3">
+                            <h1 className="font-bold">03</h1>
+                            <p>Technology</p>
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </Dialog.Panel>
