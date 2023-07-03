@@ -22,6 +22,12 @@ module.exports = {
         bgHomeMobile: "url('/src/assets/home/background-home-mobile.jpg')",
         bgHomeTablet: "url(/src/assets/home/background-home-tablet.jpg)",
         bgHomeDesktop: "url(/src/assets/home/background-home-desktop.jpg)",
+        bgDestinationMobile:
+          "url('/src/assets/destination/background-destination-mobile.jpg')",
+        bgDestinationTablet:
+          "url('/src/assets/destination/background-destination-tablet.jpg')",
+        bgDestinationDesktop:
+          "url('/src/assets/destination/background-destination-desktop.jpg')",
       },
     },
   },

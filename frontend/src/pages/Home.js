@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className="bg-fixed bg-no-repeat bg-cover bg-bgHomeMobile tb:bg-bgHomeTablet dt:bg-bgHomeDesktop text-white w-full h-screen pt-8">
+    <section className="bg-fixed bg-no-repeat bg-cover bg-bgHomeMobile tb:bg-bgHomeTablet dt:bg-bgHomeDesktop text-primary3 w-full h-screen pt-8">
       <div className="flex flex-col dt:pb-[131px] dt:flex-row justify-start dt:justify-between items-center dt:items-end w-full h-full gap-[64px] tb:gap-[120px] dt:gap-0">
         {/* Text Container */}
         <div className="mt-[112px] tb:mt-[202px] px-[24px] tb:px-[159px] w-full dt:w-auto flex dt:inline-flex flex-col items-center dt:items-start justify-center gap-[16px] dt:gap-[24px]">
