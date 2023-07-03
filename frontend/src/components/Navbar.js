@@ -5,7 +5,7 @@ import logo from "../assets/shared/logo.svg";
 import { ReactComponent as Hamburger } from "../assets/shared/icon-hamburger.svg";
 
 // Import Router Link
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // Import Slide Over
 import SliderComponent from "./SliderComponent";
@@ -20,30 +20,30 @@ const Navbar = () => {
         className="mb:w-10 mb:h-10 mb:ml-[24px] mb:mt-[24px] tb:w-12 tb:h-12"
       />
       {/* Tablet and Desktop Navigation */}
-      <ul className="hidden h-[96px] tb:w-[450px] tb:flex tb:order-last items-center justify-center tb:gap-10 tb:py-[40px] bg-[rgba(255,255,255,0.04)] backdrop text-primary3 font-barlowcondensed text-[14px] uppercase tracking-[2.362px]">
+      <ul className="hidden h-[96px] tb:w-[450px] dt:w-[830px] tb:flex tb:order-last items-center justify-center tb:gap-10 tb:py-[40px] bg-[rgba(255,255,255,0.04)] backdrop text-primary3 font-barlowcondensed text-[14px] uppercase tracking-[2.362px]">
         <li>
-          <Link to="/" className="flex gap-3 bar">
-            <h1 className="tb:hidden">00</h1>
+          <NavLink to="/" className="flex gap-3 relative bar">
+            <h1 className="tb:hidden dt:inline-block">00</h1>
             <p>Home</p>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/destination" className="flex gap-3">
-            <h1 className="tb:hidden">01</h1>
+          <NavLink to="/destination" className="flex gap-3 relative bar">
+            <h1 className="tb:hidden dt:inline-block">01</h1>
             <p>Destination</p>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/crew" className="flex gap-3">
-            <h1 className="tb:hidden">02</h1>
+          <NavLink to="/crew" className="flex gap-3 relative bar">
+            <h1 className="tb:hidden dt:inline-block">02</h1>
             <p>Crew</p>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/technology" className="flex gap-3">
-            <h1 className="tb:hidden">03</h1>
+          <NavLink to="/technology" className="flex gap-3 relative bar">
+            <h1 className="tb:hidden dt:inline-block">03</h1>
             <p>Technology</p>
-          </Link>
+          </NavLink>
         </li>
       </ul>
       {/* Mobile Menu */}

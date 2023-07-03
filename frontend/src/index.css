@@ -20,10 +20,13 @@
 
 @layer utilities {
   .bar::after {
-    @apply content-[''] bg-[#FFFFFF] opacity-50 h-[2px] w-[0%] left-[50%] -translate-x-[50%] -translate-y-[50%] -bottom-[5px] rounded-xl absolute duration-300;
+    @apply content-[''] bg-[#FFFFFF] opacity-50 h-[3px] w-[0%] -bottom-[38px] absolute duration-300;
   }
 
   .bar:hover::after {
-    @apply w-[25%];
+    @apply w-full;
+  }
+  .bar.active::after {
+    @apply opacity-100 w-full;
   }
 }
