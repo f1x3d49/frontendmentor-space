@@ -20,7 +20,7 @@ const Home = () => {
           </p>
         </div>
         {/* Button Container */}
-        <button className="flex items-center justify-center w-[150px] tb:w-[242px] dt:w-[274px] h-[150px] tb:h-[242px] dt:h-[274px] dt:mr-[165px] bg-primary3 rounded-full">
+        <button className="flex items-center justify-center w-[150px] tb:w-[242px] dt:w-[274px] h-[150px] tb:h-[242px] dt:h-[274px] dt:mr-[165px] bg-primary3 rounded-full relative dt:pulse">
           <h1 className="uppercase text-primary1 text-center text-[20px] tb:text-[32px] font-bellefair leading-[1.25px] tb:leading-[2px]">
             Explore
           </h1>
