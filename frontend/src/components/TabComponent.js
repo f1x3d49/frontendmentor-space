@@ -37,7 +37,7 @@ const TabComponent = () => {
           return (
             <Tab.Panel
               key={key}
-              className="w-full flex flex-col justify-center items-center text-primary3"
+              className="w-full flex flex-col justify-center items-center tb:gap-[36px] text-primary3"
             >
               <h1 className="text-center text-[56px] tb:text-[80px] dt:text-[100px] font-bellefair">
                 {data.name}
@@ -46,12 +46,12 @@ const TabComponent = () => {
                 {data.description}
               </p>
               {/* Line Break */}
-              <div className="w-[327px] h-[1px] bg-[#383B4B] mb-[32px]"></div>
+              <div className="w-[327px] tb:w-[573px] h-[1px] bg-[#383B4B] mb-[32px]"></div>
               {/* Distance and Time */}
-              <div className="flex flex-col tb:flex-row items-center dt:items-start justify-center gap-[24px] mb-[10px]">
+              <div className="flex flex-col tb:flex-row items-center dt:items-start justify-center gap-[24px] tb:gap-[72px] mb-[10px] tb:mb-0">
                 {/* Distance */}
                 <div className="flex flex-col items-center dt:items-start justify-center gap-[12px]">
-                  <h2 className="text-[14px] font-barlowcondensed leading-[2.362px] text-primary2">
+                  <h2 className="text-[14px] font-barlowcondensed tracking-[2.362px] text-primary2">
                     AVG. DISTANCE
                   </h2>
                   <h1 className="text-[28px] font-bellefair uppercase text-primary3">
@@ -60,7 +60,7 @@ const TabComponent = () => {
                 </div>
                 {/* Travel Time */}
                 <div className="flex flex-col items-center dt:items-start justify-center gap-[12px]">
-                  <h2 className="text-[14px] font-barlowcondensed leading-[2.362px] text-primary2">
+                  <h2 className="text-[14px] font-barlowcondensed tracking-[2.362px] text-primary2">
                     EST. TRAVEL TIME
                   </h2>
                   <h1 className="text-[28px] font-bellefair uppercase text-primary3">
