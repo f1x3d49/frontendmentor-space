@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 
 import mars from "../assets/destination/image-mars.png";
 import TabComponent from "../components/TabComponent";
