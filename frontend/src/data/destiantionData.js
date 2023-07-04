@@ -1,6 +1,6 @@
 export const destinationData = [
   {
-    name: "Moon",
+    name: "MOON",
     images: {
       png: "./assets/destination/image-moon.png",
       webp: "./assets/destination/image-moon.webp",
@@ -11,7 +11,7 @@ export const destinationData = [
     travel: "3 days",
   },
   {
-    name: "Mars",
+    name: "MARS",
     images: {
       png: "../assets/destination/image-mars.png",
       webp: "./assets/destination/image-mars.webp",
@@ -22,7 +22,7 @@ export const destinationData = [
     travel: "9 months",
   },
   {
-    name: "Europa",
+    name: "EUROPA",
     images: {
       png: "./assets/destination/image-europa.png",
       webp: "./assets/destination/image-europa.webp",
@@ -33,7 +33,7 @@ export const destinationData = [
     travel: "3 years",
   },
   {
-    name: "Titan",
+    name: "TITAN",
     images: {
       png: "./assets/destination/image-titan.png",
       webp: "./assets/destination/image-titan.webp",

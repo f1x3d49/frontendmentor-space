@@ -9,15 +9,21 @@ import { Tab } from "@headlessui/react";
 const TabComponent = () => {
   return (
     <Tab.Group>
-      <Tab.List className="text-primary3">
+      <Tab.List className="flex items-center justify-between gap-[16px] relative">
         {destinationData.map((data, key) => {
           return (
-            <Tab key={key} as={Fragment}>
+            <Tab
+              key={key}
+              as={Fragment}
+              className="text-[14px] tb:text-[16px] font-barlowcondensed tracking-[2.362px] tb:tracking-[2.7px] relative destinationBar"
+            >
               {({ selected }) => (
                 <button
-                  className={
-                    selected ? "bg-blue-500 text-white" : "bg-white text-black"
-                  }
+                  className={`${
+                    selected
+                      ? "text-primary3 after:opacity-100 after:w-full"
+                      : "text-primary2"
+                  }`}
                 >
                   {data.name}
                 </button>

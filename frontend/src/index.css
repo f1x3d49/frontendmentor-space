@@ -26,6 +26,7 @@
   .bar:hover::after {
     @apply w-full;
   }
+
   .bar.active::after {
     @apply opacity-100 w-full;
   }
@@ -35,5 +36,13 @@
   }
   .pulse:hover::after {
     @apply opacity-10;
+  }
+
+  .destinationBar::after {
+    @apply content-[''] bg-[#FFFFFF] opacity-50 h-[3px] w-[0%] absolute top-8 left-0 transition-opacity duration-300;
+  }
+
+  .destinationBar:hover::after {
+    @apply w-full;
   }
 }
