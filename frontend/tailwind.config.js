@@ -28,6 +28,9 @@ module.exports = {
           "url('/src/assets/destination/background-destination-tablet.jpg')",
         bgDestinationDesktop:
           "url('/src/assets/destination/background-destination-desktop.jpg')",
+        bgCrewMobile: "url('/src/assets/crew/background-crew-mobile.jpg')",
+        bgCrewTablet: "url('/src/assets/crew/background-crew-tablet.jpg')",
+        bgCrewDesktop: "url('/src/assets/crew/background-crew-desktop.jpg')",
       },
     },
   },
