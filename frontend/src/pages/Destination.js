@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
+// Planet Images
 import mars from "../assets/destination/image-mars.png";
+import europa from "../assets/destination/image-europa.png";
+import moon from "../assets/destination/image-moon.png";
+import titan from "../assets/destination/image-titan.png";
+
 import TabComponent from "../components/TabComponent";
 
 const Destiantion = () => {
-  const [selectedIndex, setSelectedIndex] = useState(1);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [imgSource, setImgSource] = useState(moon);
+
+  useEffect(() => {
+    if (selectedIndex === 0) setImgSource(moon);
+    else if (selectedIndex === 1) setImgSource(mars);
+    else if (selectedIndex === 2) setImgSource(europa);
+    else if (selectedIndex === 3) setImgSource(titan);
+  }, [selectedIndex, setSelectedIndex]);
 
   return (
     <section className="bg-fixed bg-no-repeat bg-cover bg-bgDestinationMobile tb:bg-bgDestinationTablet dt:bg-bgDestinationDesktop w-full mb:h-full tb:h-screen">
@@ -19,9 +32,16 @@ const Destiantion = () => {
           </h1>
         </div>
         {/* Planet Image and Tabs */}
-        <div className="flex flex-col  items-center justify-center gap-[32px]">
-          <img src={mars} alt="planet" className="w-[259px] h-[259px]" />
-          <TabComponent />
+        <div className="flex flex-col dt:flex-row items-center justify-center dt:justify-between dt:w-full gap-[32px]">
+          <img
+            src={imgSource}
+            alt="planet"
+            className="w-[259px] h-[259px] dt:w-[550px] dt:h-[550px] dt:ml-[119px]"
+          />
+          <TabComponent
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+          />
         </div>
       </div>
     </section>
