@@ -31,6 +31,12 @@ module.exports = {
         bgCrewMobile: "url('/src/assets/crew/background-crew-mobile.jpg')",
         bgCrewTablet: "url('/src/assets/crew/background-crew-tablet.jpg')",
         bgCrewDesktop: "url('/src/assets/crew/background-crew-desktop.jpg')",
+        bgTechnologyMobile:
+          "url('/src/assets/technology/background-technology-mobile.jpg')",
+        bgTechnologyTablet:
+          "url('/src/assets/technology/background-technology-tablet.jpg')",
+        bgTechnologyDesktop:
+          "url('/src/assets/technology/background-technology-desktop.jpg')",
       },
     },
   },

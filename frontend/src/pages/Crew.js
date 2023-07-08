@@ -20,7 +20,7 @@ const Crew = () => {
   }, [selectedIndex, setSelectedIndex]);
 
   return (
-    <section className="bg-fixed bg-no-repeat bg-cover bg-bgCrewMobile tb:bg-bgCrewTablet dt:bg-bgCrewDesktop w-full h-full dt:h-screen">
+    <section className="bg-fixed bg-no-repeat bg-cover bg-bgCrewMobile tb:bg-bgCrewTablet dt:bg-bgCrewDesktop w-full h-full">
       <div className="w-full h-full flex flex-col justify-start items-center gap-[32px]  pt-[89px] tb:pt-[136px] dt:pt-[212px]">
         {/* Header Text */}
         <div className="flex justify-center items-center gap-[16px] tb:self-start tb:ml-[38.5px] dt:ml-[167px]">
@@ -35,11 +35,7 @@ const Crew = () => {
         <div className="flex flex-col dt:flex-row items-center justify-center dt:justify-between dt:w-full gap-[32px] ">
           {/* Astronaut Image and Mobile Line */}
           <div className="w-[327px] tb:w-auto flex items-center dt:mr-[137px] justify-center border-b-[1px] border-[#383B4B] tb:border-0 tb:order-last">
-            <img
-              src={imgSource}
-              alt="astronaut"
-              className="w-1/2 tb:w-auto dt:absolute bottom-0 right-10"
-            />
+            <img src={imgSource} alt="astronaut" className="w-1/2 tb:w-auto " />
           </div>
           {/* Circle Tab */}
           <CircleTabComponent
