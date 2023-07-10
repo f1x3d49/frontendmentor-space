@@ -15,8 +15,21 @@ const Technology = () => {
   const [landscapeImgSrouce, setLandscapeImgSource] =
     useState(vehiclelandscape);
 
+  useEffect(() => {
+    if (selectedIndex === 0) {
+      setPortraitImgSource(vehicleportrait);
+      setLandscapeImgSource(vehiclelandscape);
+    } else if (selectedIndex === 1) {
+      setPortraitImgSource(spaceportportrait);
+      setLandscapeImgSource(spaceportlandscape);
+    } else if (selectedIndex === 2) {
+      setPortraitImgSource(capsuleportrait);
+      setLandscapeImgSource(capsulelandscape);
+    }
+  }, [selectedIndex, setSelectedIndex]);
+
   return (
-    <section className="bg-fixed bg-cover bg-no-repeat bg-bgTechnologyMobile tb:bg-bgTechnologyTablet dt:bg-bgTechnologyDesktop w-full h-screen">
+    <section className="bg-fixed bg-cover bg-no-repeat bg-bgTechnologyMobile tb:bg-bgTechnologyTablet dt:bg-bgTechnologyDesktop w-full h-full">
       <div className="w-full h-full flex flex-col justify-start items-center gap-[32px] pt-[89px] tb:pt-[136px] dt:pt-[212px]">
         {/* Header Text */}
         <div className="flex justify-center items-center gap-[18px] tb:self-start tb:ml-[38.5px] dt:ml-[167px]">
@@ -28,13 +41,20 @@ const Technology = () => {
           </h1>
         </div>
         {/* Tech Images and Tabs */}
-        <div className="flex flex-col dt:flex-row items-center justify-center dt:justify-between dt:w-full gap-[32px] dt:mt-[137px]">
-          <picture className="h-full w-full dt:order-last">
-            <source media="(min-width: 300px)" srcSet={vehiclelandscape} />
-            <source media="(min-width: 1300px)" srcSet={vehicleportrait} />
-            <img src={vehiclelandscape} alt="vehicle" />
+        <div className="flex flex-col dt:flex-row items-center justify-center dt:justify-between dt:w-full dt:h-full gap-[32px] dt:mt-[137px] dt:mb-[118px]">
+          <picture className="h-full w-full dt:order-last dt:max-w-full dt:max-h-[600px] block">
+            <source media="(min-width: 300px)" srcSet={landscapeImgSrouce} />
+            <source media="(min-width: 1300px)" srcSet={portraitImgSource} />
+            <img
+              src={portraitImgSource}
+              alt="vehicle"
+              className="w-full h-full"
+            />
           </picture>
-          <NumberTabComponent />
+          <NumberTabComponent
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+          />
         </div>
       </div>
     </section>

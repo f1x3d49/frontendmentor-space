@@ -20,7 +20,7 @@ const Navbar = () => {
         className="mb:w-10 mb:h-10 mb:ml-[24px] mb:mt-[24px] tb:w-12 tb:h-12"
       />
       {/* Desktop Navbar Line */}
-      <div className="mb:hidden dt:inline-block h-[1px] w-[473px] bg-primary3 opacity-25 absolute left-[180px] z-10 top-[70px]"></div>
+      <div className="mb:hidden dt:inline-block h-[1px] w-[30%] bg-primary3 opacity-25 absolute left-[20%] z-10 top-[70px]"></div>
       {/* Tablet and Desktop Navigation */}
       <ul className="hidden h-[96px] tb:w-[450px] dt:w-[830px] tb:flex tb:order-last items-center justify-center dt:mt-[24px] tb:gap-10 tb:py-[40px] shadow-2xl shadow-primary1 bg-[rgba(255,255,255,0.04)] backdrop text-primary3 font-barlowcondensed text-[14px] dt:text-[16px] uppercase tracking-[2.362px]">
         <li>

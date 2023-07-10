@@ -20,7 +20,7 @@ const Destiantion = () => {
   }, [selectedIndex, setSelectedIndex]);
 
   return (
-    <section className="bg-fixed bg-no-repeat bg-cover bg-bgDestinationMobile tb:bg-bgDestinationTablet dt:bg-bgDestinationDesktop w-full mb:h-full ">
+    <section className="bg-fixed bg-no-repeat bg-cover bg-bgDestinationMobile tb:bg-bgDestinationTablet dt:bg-bgDestinationDesktop w-full mb:h-full tb:pb-[62px] dt:pb-[118px]">
       <div className="w-full h-full flex flex-col justify-start items-center gap-[32px] pt-[89px] tb:pt-[136px] dt:pt-[212px]">
         {/* Header Text */}
         <div className="flex justify-center items-center gap-[18px] tb:self-start tb:ml-[38.5px] dt:ml-[167px]">

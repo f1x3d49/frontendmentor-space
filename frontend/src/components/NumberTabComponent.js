@@ -6,9 +6,11 @@ import { technologyData } from "../data/technologyData";
 // HeadlessUI Tab Component
 import { Tab } from "@headlessui/react";
 
-const NumberTabComponent = () => {
+const NumberTabComponent = ({ selectedIndex, setSelectedIndex }) => {
   return (
     <Tab.Group
+      selectedIndex={selectedIndex}
+      onChange={setSelectedIndex}
       as="div"
       className="flex flex-col dt:flex-row justify-center dt:items-start items-center gap-[24px] dt:gap-[80px] dt:ml-[165px]"
     >
